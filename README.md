@@ -28,9 +28,9 @@ The solution combines **exploratory analytics, machine learning forecasting, SQL
 
 ---
 
-## 📷 Dashboard Preview
+## 📊 Dashboard Preview
 
-> Add exported Tableau dashboard image here
+![EV Charging Dashboard](images/ev_charging_dashboard.png)
 
 ---
 
