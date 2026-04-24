@@ -30,7 +30,7 @@ The solution combines **exploratory analytics, machine learning forecasting, SQL
 
 ## 📊 Dashboard Preview
 
-![EV Charging Dashboard](images/ev_charging_dashboard.png)
+![EV Charging Dashboard](ev_charging_dashboard.png)
 
 ---
 
