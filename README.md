@@ -1,147 +1,164 @@
-# ⚡ EV Charging Demand Forecasting & Utilization Analytics
+# EV Charging Demand Forecasting & Utilization Analytics
 
-**Data Science | Forecasting | SQL Analytics | Energy Tech**
-
----
-
-## 📌 Project Overview
-
-This project analyzes real-world EV charging session data from Palo Alto, California, to uncover usage patterns, optimize charger utilization, and forecast future charging demand.
-
-The solution combines **data analytics, feature engineering, and machine learning** to support smarter infrastructure planning in the growing electric vehicle ecosystem.
+**Data Science | Forecasting | SQL | Tableau | Energy Analytics**
 
 ---
 
-## 🎯 Business Objective
+## Project Overview
 
-EV charging network operators need to understand historical demand and predict future charging activity in order to:
+Analyzed **259K+ EV charging sessions** from Palo Alto, California to uncover charging behavior, optimize utilization, and forecast future demand.
 
-* Reduce charger wait times
-* Improve charger availability during peak hours
-* Optimize maintenance scheduling
-* Support expansion planning with data-driven decisions
+This project combines analytics, machine learning, and dashboarding to support smarter EV infrastructure planning.
 
 ---
 
-## 📊 Dataset
+## Dashboard Preview
 
-The dataset contains **259,000+ EV charging sessions** and includes information such as:
+(Insert dashboard image here)
 
-* Charging station name
-* Start / end timestamps
+---
+
+## Business Problem
+
+Charging network operators need to answer:
+
+* When are peak charging hours?
+* How fast is demand growing?
+* How should maintenance be scheduled?
+* Where should new chargers be installed?
+* How can customer wait times be reduced?
+
+---
+
+## Dataset
+
+Real-world EV charging session data including:
+
+* Station name
+* Start / End timestamps
 * Charging duration
 * Energy delivered (kWh)
-* Charger type and port type
-* Geographic location
-* User session details
+* Charger type
+* Revenue / Fee
+* User sessions
+* Location data
 
-Location: **Palo Alto, California**
-
----
-
-## 🧹 Data Preparation
-
-Key preprocessing steps included:
-
-* Cleaning inconsistent timestamp formats
-* Handling missing values
-* Removing incomplete records
-* Creating time-based features:
-
-  * Hour of day
-  * Weekday
-  * Month
-  * Year
+**Location:** Palo Alto, California
 
 ---
 
-## 📈 Exploratory Data Analysis
+## Data Preparation
 
-The analysis identified important demand patterns such as:
+Performed:
 
-* Peak charging hours during the day
-* Weekday vs weekend charging behavior
-* Long-term growth trends in charging sessions
-* High-demand operational windows
+* Missing value treatment
+* Timestamp standardization
+* Outlier review
+* Feature engineering
+
+Created variables:
+
+* Hour of day
+* Weekday
+* Month
+* Year
+* Lag demand features
+* Rolling averages
 
 ---
 
-## 🤖 Machine Learning Forecasting
+## Exploratory Insights
+
+### Peak Usage Hours
+
+Highest charging demand occurs between **10 AM and 6 PM**
+
+### Demand Growth
+
+Strong increase in sessions from **2011–2019**
+
+### Revenue Expansion
+
+Charging monetization accelerated in later years
+
+### Energy Consumption
+
+Total delivered kWh increased significantly over time
+
+---
+
+## Forecasting Models
 
 ### Baseline Model
 
-Initial Random Forest model using basic calendar features:
+Random Forest using basic calendar features:
 
-* **MAE:** 47.51
-* **R² Score:** -0.44
+* MAE: **47.51**
+* R²: **-0.44**
 
 ### Improved Model
 
-A second model was developed using:
+Added:
 
 * Lag demand features
-* 7-day rolling averages
-* Temporal behavior patterns
+* Rolling averages
+* Temporal behavior variables
 
-### Final Results
+### Final Performance
 
-* **MAE:** 9.88
-* **R² Score:** 0.93
-
-This demonstrated a major improvement in forecasting performance.
+* MAE: **9.88**
+* R²: **0.93**
 
 ---
 
-## 🎯 Business Impact
+## Business Impact
 
-The final model can help charging operators:
+This solution enables operators to:
 
-* Forecast daily charging demand
-* Prepare for peak utilization periods
-* Improve maintenance timing
-* Plan future infrastructure growth
-* Increase customer satisfaction through better charger availability
-
----
-
-## 🧰 Tech Stack
-
-* **Python**
-* **Pandas**
-* **NumPy**
-* **Matplotlib**
-* **Seaborn**
-* **Scikit-learn**
-* **Jupyter Notebook**
+* Forecast charger demand
+* Reduce congestion
+* Improve charger uptime
+* Optimize maintenance windows
+* Support expansion planning
+* Improve customer satisfaction
 
 ---
 
-## 📂 Project Structure
+## Tech Stack
 
-```bash
-├── data/
-│   └── EVChargingStationUsage.csv
-├── notebooks/
-│   └── ev_charging_forecasting_analysis.ipynb
-├── sql/
-├── dashboard/
-├── images/
-├── requirements.txt
-└── README.md
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+* SQL
+* Tableau
+* Jupyter Notebook
+
+---
+
+## Project Structure
+
+```text
+data/
+notebooks/
+sql/
+dashboard/
+images/
+README.md
+requirements.txt
 ```
 
 ---
 
-## 🚀 Key Takeaway
+## Key Takeaway
 
-This project demonstrates how Data Science can transform historical EV charging data into actionable forecasting insights that improve operational efficiency and support sustainable transportation growth.
+Historical charging data can be transformed into predictive insights that improve operational efficiency and support EV infrastructure growth.
 
 ---
 
-## 📬 Contact
+## Contact
 
 **Karen Cruz**
-Data Scientist
 
-* GitHub: https://github.com/Kcruz4
-* LinkedIn: https://www.linkedin.com/in/karencruz-datascientist/
+GitHub: https://github.com/Kcruz4
+LinkedIn: https://www.linkedin.com/in/karencruz-datascientist/
